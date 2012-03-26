@@ -21,11 +21,6 @@
 # lines, full and toro, hence its name.
 #
 
-# Camera
-PRODUCT_PACKAGES := \
-    Camera \
-    Gallery
-
 #if we do this after the full_base_telephony is included some of these don't get picked up..
 PRODUCT_COPY_FILES += \
     device/samsung/toro/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
@@ -34,13 +29,10 @@ PRODUCT_COPY_FILES += \
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-# This is where we'd set a backup provider if we had one
-#$(call inherit-product, device/sample/products/backup_overlay.mk)
+
 # Inherit from toro device
 $(call inherit-product, device/samsung/toro/device.mk)
 
-# Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_toro
 PRODUCT_DEVICE := toro
-PRODUCT_BRAND := Android
-PRODUCT_MODEL := Full AOSP on Toro
+PRODUCT_MODEL := Full Android on Toro

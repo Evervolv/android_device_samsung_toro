@@ -14,4 +14,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo full_toro-userdebug
+#We're only going to be building Evervolv, so comment this out for now
+#add_lunch_combo full_toro-userdebug
