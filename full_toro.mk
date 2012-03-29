@@ -31,8 +31,9 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from toro device
-$(call inherit-product, device/samsung/toro/device.mk)
+$(call inherit-product, device/samsung/toro/device_vzw.mk)
 
 PRODUCT_NAME := full_toro
 PRODUCT_DEVICE := toro
-PRODUCT_MODEL := Full Android on Toro
+PRODUCT_BRAND := Android
+PRODUCT_MODEL := Toro-VZW
