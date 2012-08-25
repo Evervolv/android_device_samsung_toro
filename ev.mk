@@ -16,7 +16,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mysid BUILD_FINGERPRINT="google/mys
 
 # Set up the product codename, build version & MOTD.
 PRODUCT_CODENAME := Primo
-PRODUCT_VERSION_DEVICE_SPECIFIC := p1
+PRODUCT_VERSION_DEVICE_SPECIFIC := b2
 
 PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for choosing Evervolv for your Galaxy Nexus\nPlease visit us at \#evervolv on irc.freenode.net\nFollow @preludedrew & @MongooseHelix for updates\n------------------------------------------------\n"
 
