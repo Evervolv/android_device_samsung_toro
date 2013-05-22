@@ -24,6 +24,10 @@ PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank yo
 # Hot reboot
 PRODUCT_PACKAGE_OVERLAYS += vendor/ev/overlay/hot_reboot
 
+# 720p overlay
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/ev/overlay/720p
+
 # Copy compatible bootanimation
 PRODUCT_COPY_FILES +=  \
     vendor/ev/prebuilt/720p/media/bootanimation.zip:system/media/bootanimation.zip
